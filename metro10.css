@@ -1,0 +1,14 @@
+body {
+    background-image: url('images/KampusAlatKartalla2.jpg');
+    background-size: cover;
+}
+#playerElement5 {
+    height: 60%;
+}
+.column {
+    text-align:center;
+}
+.ui.grid>.column:not(.row) {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
