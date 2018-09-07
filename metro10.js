@@ -159,3 +159,8 @@ player4.addEventListener('click', () => {
     )
     video.play();
 });
+
+document.querySelector('#jyrinappi').addEventListener('click', () => {
+    $('#jyri').modal('show');
+  });
+  

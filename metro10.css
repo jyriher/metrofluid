@@ -3,7 +3,7 @@ body {
     background-size: cover;
 }
 #playerElement5 {
-    height: 60%;
+    height: 100%;
 }
 .column {
     text-align:center;
@@ -24,7 +24,9 @@ body {
 }
 i {
     color: #ff5a00;
+    
 }
+
 h1 {
     padding: 10px;
     font-family: 'Lato', sans-serif;
@@ -33,4 +35,35 @@ h1 {
 #logo {
     width: 30rem;
     padding: 0.5rem;
+}
+#big {
+    height: 70%;
+}
+#jyrinappi {
+     margin: 20px;
+}
+#nimi {
+    padding-top: 1rem;
+}
+i.huge.icon {
+    font-size: 4em !important;
+     }
+
+/*
+@media (min-width: 600px) {
+    .ui.footer.form-page { 
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+*/
+
+@media (max-width: 600px) {
+    i.huge.icon {
+        font-size: 7em !important;
+         }
+         #playerElement5 {
+            height: 95%;
+        }
 }
