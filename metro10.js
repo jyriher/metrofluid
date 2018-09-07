@@ -4,6 +4,9 @@ const player3 = document.querySelector('#arrow3');
 const player4 = document.querySelector('#arrow4');
 const player5 = document.querySelector('#playerElement5');
 
+const mauno = document.querySelector('.mauno');
+
+
 const video = WowzaPlayer.create('playerElement5',
     {
         "license": "PLAY1-36azp-MjHDW-yubjC-YtujY-Yfcy6",
@@ -99,10 +102,12 @@ const video5 = WowzaPlayer.create('playerElement1',
 
 player1.addEventListener('click', () => {
 
-    arrow1.style.color = '#ff5a00';
-    arrow2.style.color = 'black';
-    arrow3.style.color = 'black';
-    arrow4.style.color = 'black';
+    arrow1.classList.remove('mauno');
+    arrow2.classList.add('mauno');
+    arrow3.classList.add('mauno');
+    arrow4.classList.add('mauno');
+
+
     video.setConfig(
         {
             "sourceURL": "http%3A%2F%2F195.148.104.124%3A1935%2Fmobile%2Fjyri%2Fplaylist.m3u8"
@@ -112,10 +117,11 @@ player1.addEventListener('click', () => {
 });
 
 player2.addEventListener('click', () => {
-    arrow1.style.color = 'black';
-    arrow2.style.color = '#ff5a00';
-    arrow3.style.color = 'black';
-    arrow4.style.color = 'black';
+
+    arrow1.classList.add('mauno');
+    arrow2.classList.remove('mauno');
+    arrow3.classList.add('mauno');
+    arrow4.classList.add('mauno');
 
     video.setConfig(
         {
@@ -126,10 +132,11 @@ player2.addEventListener('click', () => {
 });
 
 player3.addEventListener('click', () => {
-    arrow1.style.color = 'black';
-    arrow2.style.color = 'black';
-    arrow3.style.color = '#ff5a00';
-    arrow4.style.color = 'black';
+
+    arrow1.classList.add('mauno');
+    arrow2.classList.add('mauno');
+    arrow3.classList.remove('mauno');
+    arrow4.classList.add('mauno');
     video.setConfig(
         {
             "sourceURL": "http%3A%2F%2F195.148.104.124%3A1935%2Fmobile%2FRoskaloota%2Fplaylist.m3u8"
@@ -139,10 +146,12 @@ player3.addEventListener('click', () => {
 });
 
 player4.addEventListener('click', () => {
-    arrow1.style.color = 'black';
-    arrow2.style.color = 'black';
-    arrow3.style.color = 'black';
-    arrow4.style.color = '#ff5a00';
+    
+    arrow1.classList.add('mauno');
+    arrow2.classList.add('mauno');
+    arrow3.classList.add('mauno');
+    arrow4.classList.remove('mauno');
+    
     video.setConfig(
         {
             "sourceURL": "http%3A%2F%2F195.148.104.124%3A1935%2Fmobile%2FnoWauuuuz%2Fplaylist.m3u8"
